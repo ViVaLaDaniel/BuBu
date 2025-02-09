@@ -20,8 +20,8 @@ body {
 .header {
   width: 100%; /* Ширина на 100% */
   padding: 20px 0; /* Отступы сверху и снизу */
-  background-color: #333; /* Темный фон */
-  color: #fff; /* Белый цвет текста */
+  background-color: #fdfdfd; /* Темный фон */
+  color: #e39818; /* Белый цвет текста */
   text-align: center; /* Выравнивание текста по центру */
   font-size: 24px; /* Размер шрифта */
   font-weight: bold; /* Жирный шрифт */
@@ -247,19 +247,19 @@ body {
 .footer {
   width: 100%; /* Ширина на 100% */
   padding: 10px 0; /* Отступы сверху и снизу */
-  background-color: #333; /* Темный фон */
-  color: #fff; /* Белый цвет текста */
+  background-color: #f9f9f9; /* Темный фон */
+  color: #e39818; /* Белый цвет текста */
   text-align: center; /* Выравнивание текста по центру */
   font-size: 24px; /* Размер шрифта */
   font-weight: bold; /* Жирный шрифт */
-  
+  margin-bottom: 10px; /* Отступ снизу */
   position: sticky; /* Закрепление */
   bottom: 0; /* Закрепить внизу страницы */
   z-index: 1000; /* Убедиться, что шапка будет поверх других элементов */
 }
 
 .footer img {
-  width: 40px; /* Ширина иконок */
-  height: 40px; /* Высота иконок */
-  margin: 0 10px; /* Отступы слева и справа */
+  width: 30px; /* Ширина иконок */
+  height: 30px; /* Высота иконок */
+  margin: 0 20px; /* Отступы слева и справа */
 }
