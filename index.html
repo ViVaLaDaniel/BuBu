@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinite Image Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   </head>
   <body>
 
@@ -114,7 +116,10 @@
     <!-- Контактная форма -->
     <section class="contact-form-section">
       <h2 class="form-title">Свяжитесь с нами</h2>
-      <form class="contact-form">
+      <form class="contact-form" action="https://api.web3forms.com/submit"
+        method="POST">
+        <input type="hidden" name="access_key"
+          value="d5774919-ccc2-4a6f-a376-b394cce86098">
         <label for="name">Имя:</label>
         <input type="text" id="name" name="name" placeholder="Введите ваше имя"
           required />
@@ -126,6 +131,19 @@
         <label for="message">Сообщение:</label>
         <textarea id="message" name="message"
           placeholder="Введите ваше сообщение" required></textarea>
+
+        <label for="service">Выберите услугу:</label>
+        <select id="service" name="service" required>
+          <option value disabled selected>Выберите услугу...</option>
+          <option value="Кейтеринг">Кейтеринг</option>
+          <option value="Декорация мероприятий">Декорация мероприятий</option>
+          <option value="Аренда помещения">Аренда помещения</option>
+          <option value="Полный пакет услуг">Полный пакет услуг</option>
+        </select>
+
+        <label for="date">Выберите дату:</label>
+        <input type="text" id="date-picker" name="date"
+          placeholder="Выберите дату" required>
 
         <button type="submit">Отправить</button>
       </form>
@@ -145,5 +163,16 @@
           src="/src/icons/phone-incoming-solid-24(1).png" alt></a>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      flatpickr("#date-picker", {
+        dateFormat: "Y-m-d", // Формат даты
+        altInput: true, // Более дружелюбное поле
+        altFormat: "d M Y",
+        monthSelectorType: "dropdown", // Выбор месяца из списка
+      });
+    });
+    </script>
   </body>
+
 </html>
