@@ -262,3 +262,68 @@ body {
   height: 30px; /* Высота иконок */
   margin: 0 20px; /* Отступы слева и справа */
 }
+
+/* Стиль для секции с картой */
+.map-section {
+  width: 100%; /* Растягиваем карту на всю ширину */
+  height: 400px;
+  margin: 20px 0;
+}
+
+.google-map {
+  width: 100%; /* Полная ширина для адаптивности */
+  height: 100%; /* Полная высота секции */
+  border: none; /* Убираем рамку */
+}
+
+/* Стиль для контактной формы */
+.contact-form-section {
+  padding: 20px;
+  background-color: #f9f9f9; /* Светлый фон */
+  text-align: center;
+}
+
+.form-title {
+  font-size: 24px; /* Размер заголовка формы */
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto; /* Центрируем форму */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form label {
+  font-weight: bold; /* Выделяем текст меток */
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd; /* Легкая рамка */
+  border-radius: 5px; /* Скругленные углы */
+  font-size: 16px; /* Размер текста */
+}
+
+.contact-form textarea {
+  resize: vertical; /* Ограничиваем изменение размера только по вертикали */
+  height: 100px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #007bff; /* Синий фон */
+  color: white; /* Белый текст */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3; /* Более темный синий при наведении */
+}
