@@ -141,6 +141,18 @@
           <option value="Полный пакет услуг">Полный пакет услуг</option>
         </select>
 
+        <label for="phone">Телефон:</label>
+        <div class="phone-input-wrapper">
+          <select id="country-code" name="country-code" required>
+            <option value="+34">🇪🇸 +34 (Испания)</option>
+            <option value="+48">🇵🇱 +48 (Польша)</option>
+            <option value="+1">🇺🇸 +1 (США)</option>
+            <option value="+44">🇬🇧 +44 (Великобритания)</option>
+          </select>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+            required>
+        </div>
+
         <label for="date">Выберите дату:</label>
         <input type="text" id="date-picker" name="date"
           placeholder="Выберите дату" required>

@@ -329,6 +329,33 @@ body {
   cursor: pointer; /* Указатель на иконке выбора даты */
 }
 
+/* Контейнер для выбора страны и номера */
+.phone-input-wrapper {
+  display: flex; /* Рядом расположенные элементы */
+  align-items: center;
+  gap: 10px;
+}
+
+/* Стили выпадающего списка */
+#country-code {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Поле ввода номера телефона */
+#phone {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
 /* Hover эффекты */
 #service:hover,
 #date:hover {
